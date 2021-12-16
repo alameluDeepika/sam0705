@@ -1,12 +1,15 @@
 function preload(){ } 
-function setup(){ var canvas=createCanvas(350,350);
+function setup(){ 
+  var canvas=createCanvas(350,350);
 canvas.center(); 
 video=createCapture(VIDEO); 
 video.hide();
 video.size(350,350); 
 poseNet=ml5.poseNet(video,modelLoaded); 
-poseNet.on('pose',gotPoses); } 
-function modelLoaded(){ console.log("model is loaded"); } 
+poseNet.on('pose',gotPoses); 
+} 
+function modelLoaded(){ 
+  console.log("model is loaded"); } 
 function gotPoses(results){ 
 if(results.length > 0){ 
 console.log(results); } 
