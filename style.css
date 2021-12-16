@@ -1,12 +1,13 @@
 body{ 
-  background-image:url("background.jpg"); } 
+  background-image:url("background.jpg"); 
+} 
 canvas{ 
   animation-name: clown; 
   animation-duration: 4s;
-  animation-iteration-count: infinite; } 
+  animation-iteration-count: infinite;
+} 
 @keyframes clown { 
-  0%{ box-shadow: 1px 1px 38px green; 
-  } 
+  0%{ box-shadow: 1px 1px 38px green;} 
   25%{ box-shadow: 1px 1px 38px rgb(17, 221, 153); } 
   50%{ box-shadow: 1px 1px 38px blue; }
   100%{ box-shadow:1px 1px 38px darkblue; } }
