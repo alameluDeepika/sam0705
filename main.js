@@ -3,8 +3,9 @@ function setup(){
   var canvas=createCanvas(350,350);
 canvas.center(); 
 video=createCapture(VIDEO); 
+  video.size(350,350); 
 video.hide();
-video.size(350,350); 
+
 poseNet=ml5.poseNet(video,modelLoaded); 
 poseNet.on('pose',gotPoses); 
 } 
