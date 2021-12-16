@@ -2,7 +2,7 @@ function preload(){ }
 function setup(){ 
   var canvas=createCanvas(350,350);
 canvas.center(); 
-var video=createCapture(VIDEO); 
+video=createCapture(VIDEO); 
   video.size(350,350); 
 video.hide();
 
